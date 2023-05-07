@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Error{% endblock %}
+
+{% block errors %}
+<link rel="stylesheet" href="/CSS/Errors.css">
+{% endblock %}
+
+{% block content %}
+    <div id="Header">
+        <img id="Logo" src="/Image/ORT.png">
+    </div>
+    <div id="Fond"> <div id="CadreAccueil">
+            <img id="HelpOrt" src="/Image/img.png"><br><br><br>
+            <h1 id="Error">Error 500</h1>
+            <h1 class="Raison">Erreur Serveur</h1>
+            <br><br>
+            <button type="button" class="button" href="/../home">Retourner à l'acceuil</button>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var checkbox = $("#checkbox");
+            var password = $("#Mdp");
+            checkbox.click(function() {
+                if (checkbox.prop("checked")) {
+                    password.attr("type", "text");
+                } else {
+                    password.attr("type", "password");
+                }
+            });
+        });
+
+    </script>
+{% endblock %}
+

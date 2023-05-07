@@ -1,0 +1,153 @@
+#Header {
+    position: relative;
+    width: 100px;
+    height: 65px;
+}
+
+#Logo {
+    width: 150px;
+    height: 62px;
+}
+
+#Cadre {
+    margin-top: 100px;
+    margin-left: 376px;
+    box-sizing: border-box;
+    position: center;
+    width: 700px;
+    height: 700px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+}
+
+#Mail {
+    position: center;
+    margin-left: 15px;
+}
+#Mdp {
+    position: center;
+    margin-left: 15px;
+}
+#TMdp {
+    position: center;
+    margin-left: 215px;
+}
+
+#Envoyer {
+    position: center;
+    margin-left: 323px;
+    color: #0057FF;
+    background: aqua;
+}
+
+#HelpOrt {
+    width: 150px;
+    height: auto;
+    position: center;
+    margin-left: 285px;
+}
+
+#Fond {
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 1500px;
+    height: 900px;
+    background: linear-gradient(180deg, #0057FF 0%, rgba(73, 255, 255, 0.3) 100%);
+    border: 1px solid #FFFFFF;
+}
+
+#Footer {
+    width: 100px;
+    height: 60px;
+}
+.container {
+    position: absolute;
+    top: 10%;
+}
+.button {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: blue;
+    padding: 15px 50px;
+    margin: 0 auto;
+}
+.button span {
+    position: relative;
+    z-index: 1;
+}
+.button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: #00BFFF;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+}
+.button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+#affiche {
+    position: center;
+    margin-left: 255px;
+}
+
+img{
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+img:hover{
+    transform:rotate3d(0,1,0,180deg);
+}
+#Lien {
+    position: center;
+    margin-left: 215px;
+}
+
+#TP {
+    position: center;
+    margin-left: 175px;}
+
+#TR {
+    position: center;
+    margin-left: 80px;}
+
+#TD {
+    position: center;
+    margin-left: 30px;}
+
+
+#CadreAccueil {
+    margin-top: 100px;
+    margin-left: 376px;
+    box-sizing: border-box;
+    position: center;
+    width: 700px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+}
+
+
+#TMail1 {
+    position: center;
+    margin-left: 140px;}

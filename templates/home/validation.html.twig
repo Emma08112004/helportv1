@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div id="Header">
+    <img id="Logo" src="/Image/ORT.png">
+</div>
+<div id="Fond">
+    <div id="CadreAccueil">
+        <img id="HelpOrt" src="/Image/img.png"><br><br><br>
+        <label id="TMail1">Identifiant Ecole Directe : </label>
+        <input name="utilisateur" type="email" id="Mail"><br><br>
+        <label id="TMdp">Mot de passe: </label>
+        <input name="password" type="password" id="Mdp"><br><br>
+        <label for="checkbox" id="affiche">Afficher le mot de passe</label>
+        <input type="checkbox" id="checkbox">
+        <br><br>
+        <button type="button" class="button"><span>Connexion</span></button>
+        <label id="Lien">Pas de compte ?<a href="/../inscription"> Créer en un !</a> </label>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var checkbox = $("#checkbox");
+        var password = $("#Mdp");
+        checkbox.click(function() {
+            if (checkbox.prop("checked")) {
+                password.attr("type", "text");
+            } else {
+                password.attr("type", "password");
+            }
+        });
+    });
+
+</script>
+
+{% endblock %}
+
